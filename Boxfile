@@ -1,0 +1,25 @@
+web1: #component type & number
+  name: thea            #component settings
+  shared_writable_dirs:
+    - /bonfire/application/cache
+    - /bonfire/application/logs
+    - /bonfire/application/config
+    - /bonfire/application/config/development
+    - /bonfire/application/config/testing
+    - /bonfire/application/config/production
+    - /bonfire/application/archives
+    - /bonfire/application/archives/config
+    - /bonfire/application/db/backups
+    - /bonfire/application/db/migrations
+    - /assets/cache
+  document_root: app
+  php_version: 5.3.8
+  php_extensions:
+    - mysql
+    - gd
+    - eaccelerator
+     
+db1: #component type & number 
+  name: Ronin            #component settings
+  type: mysql
+   
